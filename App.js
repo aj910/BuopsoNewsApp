@@ -16,7 +16,7 @@ export default function App() {
     <View style={styles.container}>
       <Image 
         source={require("./assets/Buopso-News.png")}
-        style={{width: 300, height: 190, marginTop: -70}}/>
+        style={{width: 300, height: 190, marginTop: -150}}/>
      
       <View>
       <TextInput
@@ -40,6 +40,18 @@ export default function App() {
     <TouchableOpacity style={styles.loginBtn}>
       <Text style={styles.loginText}>LOGIN</Text>
     </TouchableOpacity>
+
+    <Text style={styles.white}>
+      ______ Or Continue With ______
+    </Text>
+
+    <View>
+      <TouchableOpacity style={styles.googleBtn}>
+        <Text style={styles.googleText}>Google</Text>
+      </TouchableOpacity>
+    </View>
+
+
     
 </View>
   );
@@ -83,6 +95,27 @@ const styles = StyleSheet.create({
     paddingTop: 13,
     color: '#fff',
     fontWeight: 'bold'
+  }, 
+
+  white: {
+    color: '#fff',
+    margin: 20,
+    fontWeight: 'bold',
+    fontSize: 17
+  },
+
+  googleBtn: {
+    backgroundColor: '#cd5c5c',
+    width: 150,
+    height: 50,
+    borderRadius: 5
+  }, 
+
+  googleText: {
+    color: '#fff', 
+    marginLeft: 50,
+    marginTop: 15,
+    fontSize: 13
   }
 
 });
